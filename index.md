@@ -9,7 +9,7 @@ title: "Home"
 
   <!-- Left section with the photo -->
   <div style="flex: 1; text-align: center; padding: 10px;">
-    <img src="./files/Niklas_Müller_NewHiers_Oktober_2019-8607-pass.jpg" alt="My Photo" style="width: 80%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    <img src="./assets/Niklas_Müller_NewHiers_Oktober_2019-8607-pass.jpg" alt="My Photo" style="width: 80%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
   </div>
 
   <!-- Right section with custom text -->
@@ -23,7 +23,7 @@ title: "Home"
 </div>
 
 
-![My Photo](./files/Niklas_Müller_NewHiers_Oktober_2019-8607-pass.jpg)
+![My Photo](./assets/Niklas_Müller_NewHiers_Oktober_2019-8607-pass.jpg)
 
 ![](https://niklas-mueller.github.io/files/Niklas_Müller_NewHiers_Oktober_2019-8607-pass.jpg)
 
