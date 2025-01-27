@@ -4,6 +4,8 @@ title: "Home"
 
 ---
 
+![My Photo](./files/Niklas_Müller_NewHiers_Oktober_2019-8607-pass.jpg)
+
 ![](https://niklas-mueller.github.io/files/Niklas_Müller_NewHiers_Oktober_2019-8607-pass.jpg)
 
 I'm a PhD candidate at the University of Amsterdam with [Iris I. A. Groen](https://sites.google.com/view/irisgroen) and H. Steven Scholte.
