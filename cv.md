@@ -1,2 +1,3 @@
-**Please see [this PDF](https://niklas-mueller.github.io/files/Scientific_CV_NiklasMueller-EN.pdf){:target="_blank"} for the full CV**
-
+**Please see <a href="{{ '/assets/files/Scientific_CV_NiklasMueller-EN.pdf' | relative_url }}" target="_blank">
+  this PDF
+</a> for the full CV**
