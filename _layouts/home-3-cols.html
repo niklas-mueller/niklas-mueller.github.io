@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/index.sass' | relative_url }}">
+  <style>
+    /* Three-column layout */
+    .three-column {
+      display: flex;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .left-column {
+      flex: 1 1 150px;
+      max-width: 150px;
+    }
+
+    .left-column img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%; /* circular aperture */
+      object-fit: cover;
+      display: block;
+    }
+
+    .middle-column {
+      flex: 2 1 500px;
+    }
+
+    .right-column {
+      flex: 1 1 250px;
+    }
+
+    .right-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .right-column li {
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .three-column {
+        flex-direction: column;
+      }
+      .left-column,
+      .middle-column,
+      .right-column {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+  </header>
+
+  <div class="three-column">
+    <!-- Left: Image -->
+    <div class="left-column">
+      <img src="{{ '/assets/imgs/me.jpg' | relative_url }}" alt="Profile">
+    </div>
+
+    <!-- Middle: Page content -->
+    <div class="middle-column">
+      {{ content }}
+    </div>
+
+    <!-- Right: Blog post headers -->
+    <div class="right-column">
+      <h3>Recent Posts</h3>
+      <ul>
+        {% for post in site.posts %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© {{ site.time | date: '%Y' }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>
