@@ -13,7 +13,9 @@ We indentify the tuning to background features as one of the main drivers of the
 
 Checkout the preprint here on [bioRxiv!](https://www.biorxiv.org/content/10.1101/2024.05.30.595526v1)
 
+![Description]({{ '/assets/imgs/texture_bias_preprint_screenshot.png' | relative_url }})
+
 <div style="display: flex; align-items: center;">
-    <img src="./assets/imgs/texture_bias_preprint_screenshot.png" />
+    <img src="/assets/imgs/texture_bias_preprint_screenshot.png" />
 </div>
 
