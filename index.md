@@ -1,6 +1,6 @@
 ---
 layout: default
-body_class: three-column
+body_class: home-3-cols
 ---
 
 
