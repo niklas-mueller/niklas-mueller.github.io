@@ -13,8 +13,6 @@ We  develop a new method and show that abundant retinotopic information can be r
 
 Check out the preprint here on [bioRxiv!](https://www.biorxiv.org/content/10.1101/2024.08.05.606515v1)
 
-![Alt text]({{ '/assets/imgs/oads_eeg_preprint_screenshot.png' | relative_url }})
-
 <div style="display: flex; align-items: center;">
-    <img src="./assets/imgs/oads_eeg_preprint_screenshot.png" />
+    <img src="/assets/imgs/oads_eeg_preprint_screenshot.png" />
 </div>
