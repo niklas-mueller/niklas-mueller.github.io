@@ -24,7 +24,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "mailto:n.muller@uva.nl"}
   - {title: Github, icon: github, url: "https://github.com/niklas-mueller"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/niklas-mueller12/"}
-  - {title: Scholar, icon: "{% a_svg google-scholar %}", url: "https://scholar.google.com/citations?user=GxMPblkAAAAJ&hl=en"}
+  - {title: Scholar, icon: "ai ai-google-scholar", url: "https://scholar.google.com/citations?user=GxMPblkAAAAJ&hl=en"}
   - {title: ORCID, icon: "{% a_svg orcid %}", url: "https://orcid.org/0009-0001-9281-9296"}
   
   
