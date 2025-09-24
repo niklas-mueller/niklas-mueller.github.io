@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
-gem "faraday-retry"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-academicons-svg"
+  gem "jekyll-paginate-v2"
 end
 

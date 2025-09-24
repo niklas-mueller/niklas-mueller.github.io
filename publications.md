@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "Publications"
+pagination:
+  enabled: true
+  collection: publications
+  per_page: 10
 
 ---
 
-{% if site.show_excerpts %}
-  {% include publications.html %}
-{% else %}
-  {% include archive.html title="Publications" %}
-{% endif %}
+{% include publications.html %}
