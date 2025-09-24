@@ -1,6 +1,6 @@
-{%- assign publications = paginator.publications | default: site.publications -%}
+{%- assign posts = paginator.publications | default: site.publications -%}
 <div class="fancy-post-list">
-  {% for post in publications %}
+  {% for post in posts %}
     <div class="fancy-post-card">
       {% if post.thumbnail %}
       <div class="fancy-post-thumb-wrap">
@@ -11,9 +11,6 @@
       {% endif %}
       <div class="fancy-post-body">
         <a class="fancy-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <!-- <div class="fancy-post-meta">
-          <span class="fancy-post-date"><i class="fa-regular fa-calendar"></i> {{ post.date | date: '%b %d, %Y' }}</span>
-        </div> -->
         {% if post.authors %}
           <div class="fancy-post-authors">{{ post.authors | join: ', ' }}</div>
         {% endif %}
