@@ -1,0 +1,214 @@
+---
+---
+
+@import index, font, basic, layout, classes
+
+html
+  background: #fff
+  padding: 0 calc(38% - 22em)
+
+body
+  box-shadow: 0 0 .3em darken($light, 65%)
+
+body > header, body > footer
+  background: $light
+  color: $dark
+
+@media (min-width: 32em)
+  body > header, body > article, body > footer
+    // padding: 1.75em calc(22% - 6em)
+    padding-left: 0
+    padding-right: 0
+    padding-top: 1.75em
+    padding-bottom: 1.75em
+
+@media (prefers-color-scheme: light)
+  html
+    background: $light
+  body > header, body > footer
+    background: $light
+  body, body > header, body > footer
+    box-shadow: 0 0 0 0px $light
+
+
+
+
+.three-column
+  display: flex
+  gap: 2rem
+  max-width: 1200px
+  margin: auto
+  padding: 2rem
+  flex-wrap: wrap
+  align-items: flex-start
+
+  .left-column
+    flex: 1 1 150px
+    max-width: 150px
+
+    img
+      width: 100%
+      border-radius: 50%   // circular aperture
+      object-fit: cover
+      display: block
+
+  .middle-column
+    flex: 2 1 500px
+
+  .right-column
+    flex: 1 1 250px
+
+    ul
+      list-style: none
+      padding: 0
+
+      li
+        margin-bottom: 0.5rem
+
+  @media (max-width: 900px)
+    flex-direction: column
+
+    .left-column,
+    .middle-column,
+    .right-column
+      max-width: 100%
+
+.post-three-column .three-column
+  display: flex
+  gap: 2rem
+  max-width: 1200px
+  margin: auto
+  padding: 2rem
+  flex-wrap: wrap
+  align-items: flex-start
+
+  .left-column,
+  .middle-column,
+  .right-column
+    flex: 0 0 30%
+    max-width: 30%
+
+
+.post-list
+  display: flex
+  flex-direction: column
+  gap: 1.5rem
+  margin: 2rem 0
+
+.post-list-block
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background: lighten($dark, 60%)
+  border-radius: 1em
+  box-shadow: 0 2px 12px rgba($dark, 0.07)
+  padding: 1.2em 1.5em
+  transition: box-shadow 0.2s, background 0.2s
+  border: 1px solid lighten($dark, 55%)
+  min-height: 90px
+  &:hover
+    background: lighten($dark, 65%)
+    box-shadow: 0 4px 24px rgba($dark, 0.12)
+
+.post-list-content
+  flex: 1 1 auto
+  display: flex
+  flex-direction: column
+  gap: 0.3em
+
+.post-title
+  font-size: 1.2em
+  font-weight: 600
+  color: $dark
+  text-decoration: none
+  margin-bottom: 0.2em
+  transition: color 0.2s
+  &:hover
+    color: darken($dark, 20%)
+
+.post-date
+  font-size: 0.95em
+  color: lighten($dark, 20%)
+  opacity: 0.8
+
+.post-thumbnail.right
+  margin-left: 1.5em
+  flex-shrink: 0
+  display: block
+  img
+    width: 70px
+    height: 90px
+    object-fit: cover
+    border-radius: 0.5em
+    box-shadow: 0 1px 6px rgba($dark, 0.10)
+    background: #fff
+
+
+.fancy-post-list
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+  gap: 2.5rem 2rem
+  margin: 2.5rem 0.5rem
+
+.fancy-post-card
+  display: flex
+  flex-direction: row
+  align-items: stretch
+  background: #fff // linear-gradient(120deg, lighten($dark, 65%) 0%, lighten($dark, 55%) 100%)
+  border-radius: 1.2em
+  box-shadow: 0 4px 24px rgba($dark, 0.10)
+  overflow: hidden
+  transition: box-shadow 0.2s, transform 0.2s
+  //border: 1px solid lighten($dark, 55%)
+  min-height: 160px
+  &:hover
+    box-shadow: 0 8px 32px rgba($dark, 0.18)
+    transform: translateY(-4px) scale(1.02)
+
+.fancy-post-thumb-wrap
+  flex: 0 0 120px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #fff
+  min-height: 160px
+  max-width: 120px
+  border-right: 1px solid lighten($dark, 60%)
+
+.fancy-post-thumb
+  width: 100px
+  height: 140px
+  object-fit: cover
+  border-radius: 0.7em
+  box-shadow: 0 2px 8px rgba($dark, 0.10)
+  background: #f8f8f8
+
+.fancy-post-body
+  flex: 1 1 auto
+  padding: 1.2em 1.5em
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.fancy-post-title
+  font-size: 1.25em
+  font-weight: 700
+  color: rgb(100,205,100)
+  text-decoration: none
+  margin-bottom: 0.4em
+  transition: color 0.2s
+  &:hover
+    color: darken(rgb(100,205,100), 20%)
+
+.fancy-post-meta
+  font-size: 0.98em
+  color: lighten($dark, 20%)
+  opacity: 0.85
+  margin-bottom: 0.5em
+
+.fancy-post-desc
+  font-size: 1.05em
+  color: $dark
+  opacity: 0.92
+  margin-top: 0.2em
+  line-height: 1.5

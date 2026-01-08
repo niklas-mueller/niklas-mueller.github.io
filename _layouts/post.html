@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<article class="post-three-column">
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <div class="post-date">{{ page.date | date: "%B %d, %Y" }}</div>
+  </header>
+  <div class="three-column">
+    {% assign iframe_split = content | split: '<iframe class="pdf-preview"' %}
+    <div class="left-column">
+      {% if page.description %}
+        <p>{{ page.description }}</p>
+      {% endif %}
+    </div>
+    <div class="middle-column">
+      <!-- {% if iframe_split.size > 1 %}
+        <iframe class="pdf-preview"{{ iframe_split[1] | split: '</iframe>' | first }}</iframe>
+      {% endif %} -->
+    </div>
+    <div class="right-column">
+      {% if iframe_split.size > 1 %}
+        <iframe class="pdf-preview"{{ iframe_split[1] | split: '</iframe>' | first }}</iframe>
+      {% endif %}
+    </div>
+    <!-- <div class="right-column">
+      <ul class="post-links">
+        {% if page.poster %}
+          <li><a href="{{ page.poster | relative_url }}" target="_blank">Download Poster</a></li>
+        {% endif %}
+        {% if page.external_link %}
+          <li><a href="{{ page.external_link }}" target="_blank">{% if page.external_link_title %}{{ page.external_link_title }}{% else %}External Link{% endif %}</a></li>
+        {% endif %}
+        {% if page.pdf %}
+          <li><a href="{{ page.pdf | relative_url }}" target="_blank">PDF</a></li>
+        {% endif %}
+      </ul>
+    </div> -->
+  </div>
+  {% if page.comments != false and site.comments.isso or site.comments.disqus %}
+    <hr>
+    {% if site.comments.isso_domain %}<div id="isso-thread"></div>{% endif %}
+    {% if site.comments.disqus_shortname %}<div id="disqus_thread"></div>{% endif %}
+    <noscript>Please enable JavaScript to view comments.</noscript>
+  {% endif %}
+</article>

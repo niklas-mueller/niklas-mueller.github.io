@@ -1,0 +1,33 @@
+{%- assign posts = paginator.publications | default: site.publications -%}
+<div class="fancy-post-list">
+  {% for post in posts reversed %}
+    <div class="fancy-post-card">
+      {% if post.thumbnail %}
+      <div class="fancy-post-thumb-wrap">
+        <a href="{{ post.url | relative_url }}">
+          <img class="fancy-post-thumb" src="{{ post.thumbnail | default: '/assets/imgs/placeholder.png' | relative_url }}" alt="Thumbnail for {{ post.title }}" />
+        </a>
+      </div>
+      {% endif %}
+      <div class="fancy-post-body">
+        <a class="fancy-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% if post.authors %}
+          <div class="fancy-post-authors">{{ post.authors | join: ', ' }}</div>
+        {% endif %}
+        {% if post.description %}
+          <div class="fancy-post-desc">{{ post.description | strip_html | truncate: 120 }}</div>
+        {% elsif post.excerpt %}
+          <div class="fancy-post-desc">{{ post.excerpt | strip_html | truncate: 120 }}</div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+  <footer>
+    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« newer publications</a>{% else %}<span></span>{% endif %}
+    <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">older publications »</a>{% else %}<span></span>{% endif %}
+  </footer>
+{% endif %}
