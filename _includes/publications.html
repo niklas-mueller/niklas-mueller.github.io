@@ -1,0 +1,43 @@
+<div>
+
+  <div style="margin-bottom:1.5rem">
+    <div style="margin-bottom:1.5rem"><span style="color:#2e8b57;font-weight:600;">Preprints:</span></div>
+
+    {% for post in site.publications reversed %}
+      {%- if post.preprint == true -%}
+        <div style="margin-left:1rem;margin-bottom:0.5rem;">
+          {{ post.authors }} <span style="font-style: italic;">({{ post.status }})</span> {{ post.title }}. 
+          {% if post.pdf %}<a href="{{ post.pdf | relative_url }}"> [pdf]</a>{% endif %}
+          {% if post.doi_url %}<a href="{{ post.doi_url }}"> [doi]</a>{% endif %}
+        </div>
+      {%- endif -%}
+    {% endfor %}
+  </div>
+
+
+
+  <!-- <div style="margin-bottom:1.5rem">
+    <div style="margin-bottom:1.5rem"><span style="color:#2e8b57;font-weight:600;">Peer reviewed:</span></div>
+
+    {% for post in site.publications reversed %}
+      {%- if post.preprint == false -%}
+        <div style="margin-left:1rem;margin-bottom:0.5rem;">
+          {{ post.authors }} ({{ post.year }}) {{ post.title }}. <span style="font-style: italic;">{{ post.journal }}</span>
+          {% if post.pdf %}<a href="{{ post.pdf | relative_url }}"> [pdf]</a>{% endif %}
+          {% if post.doi_url %}<a href="{{ post.doi_url }}"> [doi]</a>{% endif %}
+        </div>
+      {%- endif -%}
+    {% endfor %}
+  </div> -->
+
+
+
+
+
+  <!-- <div>
+    <span style="color:#2e8b57;font-weight:600;">Non-peer reviewed:</span>
+
+  </div> -->
+
+
+</div>

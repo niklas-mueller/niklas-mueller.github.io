@@ -5,16 +5,16 @@
 
 html
   background: #fff
-  padding: 0 calc(38% - 22em)
 
 body
   box-shadow: 0 0 .3em darken($light, 65%)
+
 
 body > header, body > footer
   background: $light
   color: $dark
 
-@media (min-width: 32em)
+@media (min-width: 28em)
   body > header, body > article, body > footer
     // padding: 1.75em calc(22% - 6em)
     padding-left: 0
@@ -30,21 +30,29 @@ body > header, body > footer
   body, body > header, body > footer
     box-shadow: 0 0 0 0px $light
 
+.page 
+  padding: 0 calc(38% - 28em)
 
+.full-page 
+  padding: 0 calc(38% - 26em)
 
+.three-column
+  padding: 0 calc(38% - 26em)
+
+.full-page
+  margin: auto
 
 .three-column
   display: flex
   gap: 2rem
-  max-width: 1200px
+  max-width: 1500px
   margin: auto
-  padding: 2rem
   flex-wrap: wrap
   align-items: flex-start
 
   .left-column
-    flex: 1 1 150px
-    max-width: 150px
+    flex: 1 1 250px
+    max-width: 250px
 
     img
       width: 100%
@@ -53,7 +61,7 @@ body > header, body > footer
       display: block
 
   .middle-column
-    flex: 2 1 500px
+    flex: 2 1 300px
 
   .right-column
     flex: 1 1 250px

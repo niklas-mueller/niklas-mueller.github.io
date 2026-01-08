@@ -25,18 +25,18 @@ collections:
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   # - {file: "publication_page.md", title: "Publications"}
-  - {url: "publication_page", title: "Publications"}
+  - {url: "publications", title: "Publications"}
   # - {file: "conference_presentation_page.md", title: "Conference Presentations"}
-  - {url: "conference_presentation_page", title: "Conference Presentations"}
+  - {url: "conference_presentations", title: "Conference Presentations"}
   - {file: "cv.md", title: "CV"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: "Mail (n.muller@uva.nl)", icon: envelope, url: "mailto:n.muller@uva.nl"}
-  - {title: "University of Amsterdam", icon: "fa fa-fw fa-map-marker", url: "https://www.uva.nl/profiel/m/u/n.muller/n.muller.html"}
+  - {title: "University of Amsterdam", icon: map, url: "https://www.uva.nl/profiel/m/u/n.muller/n.muller.html"}
   - {title: Github, icon: github, url: "https://github.com/niklas-mueller"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/niklas-mueller12/"}
-  - {title: Scholar, icon: "fas fa-graduation-cap", url: "https://scholar.google.com/citations?user=GxMPblkAAAAJ&hl=en"}
-  - {title: ORCID, icon: "ai ai-orcid-square ai-fw", url: "https://orcid.org/0009-0001-9281-9296"}
+  - {title: Scholar, icon: graduation-cap, url: "https://scholar.google.com/citations?user=GxMPblkAAAAJ&hl=en"}
+  - {title: ORCID, icon: orcid, url: "https://orcid.org/0009-0001-9281-9296"}
 
 
 comments:

@@ -1,9 +1,17 @@
 ---
-title:  "New preprint: Developmentally-inspired object zoom-in yields human like shape-bias in DNNs!"
+# title:  "New preprint: Developmentally-inspired object zoom-in yields human like shape-bias in DNNs!"
+title:  "Developmentally-inspired object zoom-in yields human like shape-bias in DNNs"
+date: 2024-08-20
+authors: "<strong>Niklas Müller</strong>, Cees G. M. Snoek, H. Steven Scholte, Iris I. A. Groen"
+pdf: https://www.biorxiv.org/content/10.1101/2024.05.30.595526v1.full.pdf
+doi_url: https://www.biorxiv.org/content/10.1101/2024.05.30.595526v1
+preprint: true
+status: in revision
+year: 2026
+journal: Connection Science
 mathjax: true
 layout: post
 categories: media
-date: 2024-08-20
 description: >
         When toddlers interact with objects in the their environment, they typically hold them close to their face. Thus, object rather often occupy a large part of the visual field of toddlers which can be compared to a zoom-in on the object.
         In this paper, we test whether taking this simplification serious, has an effect on the texture-shape-bias of deep neural networks (DNNs).

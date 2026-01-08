@@ -1,5 +1,6 @@
 ---
 layout: default
+body_class: full-page
 title: CV
 ---
 

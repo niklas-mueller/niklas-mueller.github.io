@@ -10,4 +10,4 @@ pagination:
 
 ---
 
-{% include conference_presentation_list.html %}
+{% include conference_presentations.html %}
