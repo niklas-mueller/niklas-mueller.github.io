@@ -16,19 +16,25 @@
 
 
 
-  <!-- <div style="margin-bottom:1.5rem">
+  <div style="margin-bottom:1.5rem">
     <div style="margin-bottom:1.5rem"><span style="color:#2e8b57;font-weight:600;">Peer reviewed:</span></div>
+    {% assign current_year = site.time | date: "%Y" %}
+    {% assign years = (2024..current_year) | reverse %}
 
-    {% for post in site.publications reversed %}
-      {%- if post.preprint == false -%}
-        <div style="margin-left:1rem;margin-bottom:0.5rem;">
-          {{ post.authors }} ({{ post.year }}) {{ post.title }}. <span style="font-style: italic;">{{ post.journal }}</span>
-          {% if post.pdf %}<a href="{{ post.pdf | relative_url }}"> [pdf]</a>{% endif %}
-          {% if post.doi_url %}<a href="{{ post.doi_url }}"> [doi]</a>{% endif %}
-        </div>
-      {%- endif -%}
+    {% for year in years %}
+      {% assign pubs_in_year = site.publications | where:"year", year | where:"preprint", false %}
+      {% if pubs_in_year.size > 0 %}
+        <div style="margin-bottom:0.5rem;font-weight:600;color:#2e8b57;font-style: italic;">{{ year }}</div>
+        {% for post in pubs_in_year %}
+          <div style="margin-left:1rem;margin-bottom:0.5rem;">
+            {{ post.authors }} ({{ post.year }}) {{ post.title }}. <span style="font-style: italic;">{{ post.journal }}</span>
+            {% if post.pdf %}<a href="{{ post.pdf | relative_url }}"> [pdf]</a>{% endif %}
+            {% if post.doi_url %}<a href="{{ post.doi_url }}"> [doi]</a>{% endif %}
+          </div>
+        {% endfor %}
+      {% endif %}
     {% endfor %}
-  </div> -->
+  </div>
 
 
 

@@ -2,23 +2,26 @@
 <div class="fancy-post-list">
   {% for post in posts reversed %}
     <div class="fancy-post-card">
-      {% if post.thumbnail %}
+      <!-- {% if post.thumbnail %}
       <div class="fancy-post-thumb-wrap">
         <a href="{{ post.url | relative_url }}">
           <img class="fancy-post-thumb" src="{{ post.thumbnail | default: '/assets/imgs/placeholder.png' | relative_url }}" alt="Thumbnail for {{ post.title }}" />
         </a>
       </div>
-      {% endif %}
+      {% endif %} -->
       <div class="fancy-post-body">
         <a class="fancy-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
         <!-- <div class="fancy-post-meta">
           <span class="fancy-post-date"><i class="fa-regular fa-calendar"></i> {{ post.date | date: '%b %d, %Y' }}</span>
         </div> -->
-        {% if post.description %}
+        {% if post.topic %}
+          <div class="fancy-post-topic">{{ post.type }} on "{{ post.topic }}"</div>
+        {% endif %}
+        <!-- {% if post.description %}
           <div class="fancy-post-desc">{{ post.description | strip_html | truncate: 120 }}</div>
         {% elsif post.excerpt %}
           <div class="fancy-post-desc">{{ post.excerpt | strip_html | truncate: 120 }}</div>
-        {% endif %}
+        {% endif %} -->
       </div>
     </div>
   {% endfor %}

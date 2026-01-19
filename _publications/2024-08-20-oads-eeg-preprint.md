@@ -1,6 +1,6 @@
 ---
 # title:  "New preprint: Spatially sampling DNN features improves EEG prediction!"
-title:  "Spatially sampling DNN features improves EEG prediction"
+title:  "Spatial sampling of deep neural network features improves encoding models of foveal and peripheral visual processing in humans"
 date: 2024-08-20
 authors: "<strong>Niklas Müller</strong>, H. Steven Scholte, Iris I. A. Groen"
 pdf: https://www.biorxiv.org/content/10.1101/2024.08.05.606515v1.full.pdf

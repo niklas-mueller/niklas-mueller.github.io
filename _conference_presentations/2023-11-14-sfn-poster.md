@@ -4,6 +4,8 @@ mathjax: true
 layout: post
 categories: media
 date: 2023-11-14
+topic: Ultra-high resolution images improve modeling of neural activity evoked by natural scenes
+type: Poster
 description: >
         At SfN 2023 in Washington D.C., US, I presented the following poster: 
         

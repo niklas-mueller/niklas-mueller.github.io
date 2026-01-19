@@ -4,6 +4,8 @@ mathjax: true
 layout: post
 categories: media
 date: 2025-08-26
+type: Poster
+topic: Object-zoomed training of convolutional neural networks inspired by toddler development improves shape bias
 description: >
         Please find my poster presentation about how to increase the shape bias of Convolutional Neural Networks using a toddler-development-inspired training diet here.
         <u>
