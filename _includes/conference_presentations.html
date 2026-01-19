@@ -15,7 +15,7 @@
           <span class="fancy-post-date"><i class="fa-regular fa-calendar"></i> {{ post.date | date: '%b %d, %Y' }}</span>
         </div> -->
         {% if post.topic %}
-          <div class="fancy-post-topic">{{ post.type }} on "{{ post.topic }}"</div>
+          <div class="fancy-post-desc">{{ post.type }} on "{{ post.topic }}"</div>
         {% endif %}
         <!-- {% if post.description %}
           <div class="fancy-post-desc">{{ post.description | strip_html | truncate: 120 }}</div>
