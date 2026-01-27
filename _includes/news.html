@@ -1,0 +1,28 @@
+{%- assign posts = paginator.news | default: site.news -%}
+<div class="fancy-post-list">
+  {% for post in posts reversed %}
+    <div class="fancy-post-card">
+      <div class="fancy-post-body">
+        <a class="fancy-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% if post.topic %}
+          {% if post.type == "Talk" or post.type == "Poster" %}
+            <div class="fancy-post-desc">{{ post.type }} on "{{ post.topic }}"</div>
+          {% else %}
+            <div class="fancy-post-desc">{{ post.topic }}</div>
+          {% endif %}
+        {% endif %}
+        {% if post.funding %}
+          <div class="fancy-post-desc" style="font-weight: bold;">{{ post.funding }}</div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+  <footer>
+    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">« newer posts</a>{% else %}<span></span>{% endif %}
+    <span>page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">older posts »</a>{% else %}<span></span>{% endif %}
+  </footer>
+{% endif %}

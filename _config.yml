@@ -18,16 +18,14 @@ minimal: false             # use a dark header
 collections:
   publications:
     output: true
-  conference_presentations:
+  news:
     output: true
   cv:
     output: true
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  # - {file: "publication_page.md", title: "Publications"}
   - {url: "publications", title: "Publications"}
-  # - {file: "conference_presentation_page.md", title: "Conference Presentations"}
-  - {url: "conference_presentations", title: "Conference Presentations"}
+  - {url: "news", title: "News & Events"}
   - {file: "cv.md", title: "CV"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
