@@ -5,6 +5,7 @@ layout: post
 body_class: full-page
 categories: media
 date: 2026-04-15
+funding: Travel Grant from the UvA SoBe DSC
 type: Poster
 topic: Temporal encoding profiles of object-based visual attention
 description: >
