@@ -5,7 +5,7 @@ authors: "<strong>Niklas Müller</strong>, H. Steven Scholte, Iris I. A. Groen"
 pdf: https://www.biorxiv.org/content/10.64898/2026.04.24.720581v1.full.pdf
 doi_url: https://www.biorxiv.org/content/10.64898/2026.04.24.720581v1
 preprint: true
-# status: under review
+status: submitted
 year: 2026
 # journal: PLoS Biology
 mathjax: true
