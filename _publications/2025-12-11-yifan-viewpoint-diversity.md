@@ -7,6 +7,6 @@ authors: "Yifan Luo, <strong>Niklas Müller</strong>, H. Steven Scholte"
 preprint: true
 status: under review
 year: 2026
-journal: ACM Transactions in Applied Perception
+journal: Journal of Vision
 ---
 
