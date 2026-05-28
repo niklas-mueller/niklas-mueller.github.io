@@ -7,7 +7,7 @@ doi_url: https://www.biorxiv.org/content/10.64898/2026.04.24.720581v1
 preprint: true
 status: submitted
 year: 2026
-# journal: PLoS Biology
+# journal: Journal of Neuroscience
 mathjax: true
 layout: post
 categories: media
