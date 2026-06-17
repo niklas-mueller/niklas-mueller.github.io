@@ -5,7 +5,7 @@ date: 2024-08-20
 authors: "<strong>Niklas Müller</strong>, H. Steven Scholte, Iris I. A. Groen"
 pdf: https://www.biorxiv.org/content/10.1101/2024.08.05.606515v1.full.pdf
 doi_url: https://www.biorxiv.org/content/10.1101/2024.08.05.606515v1
-preprint: true
+preprint: false
 status: in press
 year: 2026
 journal: PLoS Computational Biology

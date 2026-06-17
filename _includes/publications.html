@@ -1,6 +1,6 @@
 <div>
 
-  <div style="margin-bottom:1.5rem">
+  <div style="margin-bottom:3.5rem">
     <div style="margin-bottom:1.5rem"><span style="color:#2e8b57;font-weight:600;">Preprints:</span></div>
 
     {% for post in site.publications reversed %}
@@ -27,7 +27,7 @@
         <div style="margin-bottom:0.5rem;font-weight:600;color:#2e8b57;font-style: italic;">{{ year }}</div>
         {% for post in pubs_in_year %}
           <div style="margin-left:1rem;margin-bottom:0.5rem;">
-            {{ post.authors }} ({{ post.year }}) {{ post.title }}. <span style="font-style: italic;">{{ post.journal }}</span>
+            {{ post.authors }} ({{ post.year }}) {{ post.title }}. {% if post.status == 'in press' %}<span></span> {% else %}<span style="font-style: italic;">{{ post.journal }}</span>{% endif %}
             {% if post.pdf %}<a href="{{ post.pdf | relative_url }}"> [pdf]</a>{% endif %}
             {% if post.doi_url %}<a href="{{ post.doi_url }}"> [doi]</a>{% endif %}
           </div>
