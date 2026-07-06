@@ -1,12 +1,12 @@
 ---
 # title:  "New preprint: Developmentally-inspired object zoom-in yields human like shape-bias in DNNs!"
-title:  "Developmentally-inspired object zoom-in yields human like shape-bias in DNNs"
+title:  "Object-zoomed training of convolutional neural networks inspired by toddler development improves shape bias"
 date: 2024-08-20
 authors: "<strong>Niklas Müller</strong>, Cees G. M. Snoek, H. Steven Scholte, Iris I. A. Groen"
-pdf: https://www.biorxiv.org/content/10.1101/2024.05.30.595526v1.full.pdf
-doi_url: https://www.biorxiv.org/content/10.1101/2024.05.30.595526v1
+pdf: https://www.tandfonline.com/doi/epdf/10.1080/09540091.2026.2694256?needAccess=true
+doi_url: https://doi.org/10.1080/09540091.2026.2694256
 preprint: false
-status: in press
+status: published
 year: 2026
 journal: Connection Science
 mathjax: true

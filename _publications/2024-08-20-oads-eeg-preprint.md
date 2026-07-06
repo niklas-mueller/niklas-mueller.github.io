@@ -1,12 +1,11 @@
 ---
-# title:  "New preprint: Spatially sampling DNN features improves EEG prediction!"
-title:  "Spatial sampling of deep neural network features improves encoding models of foveal and peripheral visual processing in humans"
+title:  "Linking retinal sampling in neural encoding models to temporal profiles of visual processing in humans"
 date: 2024-08-20
 authors: "<strong>Niklas Müller</strong>, H. Steven Scholte, Iris I. A. Groen"
-pdf: https://www.biorxiv.org/content/10.1101/2024.08.05.606515v1.full.pdf
-doi_url: https://www.biorxiv.org/content/10.1101/2024.08.05.606515v1
+pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1014371&type=printable
+doi_url: https://doi.org/10.1371/journal.pcbi.1014371
 preprint: false
-status: in press
+status: published
 year: 2026
 journal: PLoS Computational Biology
 mathjax: true
